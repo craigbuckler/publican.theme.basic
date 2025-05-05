@@ -42,7 +42,7 @@ LiveLocalhost is a lightweight development server used by this theme. It automat
 
 * **Demonstration site**
 
-  [https://publican.theme.basic.pages.dev/](https://publican.theme.basic.pages.dev/)
+  [https://publican-theme-basic.pages.dev/](https://publican-theme-basic.pages.dev/)
 
 * **Github repository**
 
