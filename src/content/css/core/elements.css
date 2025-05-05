@@ -1,0 +1,172 @@
+html {
+  background-color: var(--color-back2);
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--fsize-0);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-fore1);
+  background-color: var(--color-back1);
+}
+
+h1, h2, h3 {
+  font-weight: var(--font-weight-head);
+  margin-block-start: 1.5lh;
+  color: var(--color-fore2);
+}
+
+h1 { font-size: var(--fsize-5); margin-block-start: 1.5lh; }
+h2 { font-size: var(--fsize-4); }
+h3 { font-size: var(--fsize-3); }
+
+p {
+  margin-block-start: 1lh;
+}
+
+ul, ol, li {
+  margin-block: 1lh 1.5em;
+}
+
+ul {
+  list-style-type: square;
+}
+
+li {
+  margin-block: 0.5lh 0;
+  margin-inline: 2em;
+
+  p {
+    margin-block-start: 0.2lh;
+  }
+
+  p:first-child {
+    margin-block-start: 0;
+  }
+}
+
+blockquote {
+  padding-block: 0.75lh;
+  padding-inline: 1em;
+  margin-block: 1.5lh;
+  color: var(--color-fore2);
+  background-color: var(--color-back3);
+  border-inline-start: 3px solid var(--color-hint1);
+
+  h2, h3, h4 {
+    font-size: var(--fsize-1);
+  }
+
+  *:first-child {
+    margin-block-start: 0;
+  }
+
+  p {
+    margin-block-start: 0.5lh;
+  }
+
+}
+
+:where(h1, h2, h3, h4, h5, h6) + p {
+  margin-block-start: 0.2lh;
+}
+
+figure + * {
+  margin-block-start: 1.5lh;
+}
+
+figure, img, video {
+  margin-block-start: 1lh;
+}
+
+figure img {
+  box-shadow: 0 2px 3px var(--color-shadow);
+}
+
+figcaption {
+  font-size: var(--fsize--1);
+  margin-block-start: 0.5lh;
+}
+
+strong {
+  font-weight: var(--font-weight-bold);
+}
+
+kbd {
+  font-weight: var(--font-weight-head);
+  padding-inline: 0.3em;
+  color: var(--color-fore3);
+  background-color: var(--color-back2);
+  border: 1px solid var(--color-shadow);
+  border-block-end-width: 3px;
+  border-radius: 5px;
+}
+
+sup, sub {
+  font-size: var(--fsize--2);
+}
+
+a:link, a:visited {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  color: var(--color-hint1);
+}
+
+a:hover, a:active, a:focus {
+  color: var(--color-fore2);
+}
+
+a.headlink {
+  visibility: hidden;
+  font-size: 0.85em;
+  vertical-align: text-top;
+  text-decoration: none;
+
+  :where(h2, h3):where(:hover, :focus) & {
+    visibility: visible;
+  }
+
+}
+
+nav {
+
+  ul, ol, li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  ul, ol {
+    padding-inline-end: 1rem;
+  }
+
+  a:link, a:visited {
+    text-decoration: none;
+  }
+
+  a:hover, a:active, a:focus {
+    text-decoration: underline;
+  }
+
+  strong {
+    color: var(--color-fore2);
+  }
+
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: end;
+}
+
+main, header, footer, .logo, .share, .backnext, .related, .pinned {
+
+  & > * {
+    inline-size: var(--main-width);
+    margin-inline: auto;
+  }
+
+}

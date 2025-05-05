@@ -1,0 +1,20 @@
+---
+comment: Primary CSS file that imports others. The "refresh" value ensures CSS can be hot reloaded on change.
+refresh: ${ tacs.config.isDev ? `?${ +new Date() }` : '' }
+---
+@import url('./core/reset.css${ data.refresh }') layer(reset);
+@import url('./core/variables.css${ data.refresh }');
+@import url('./core/theme.css${ data.refresh }');
+@import url('./core/elements.css${ data.refresh }');
+
+@import url('./components/header.css${ data.refresh }');
+@import url('./components/title.css${ data.refresh }');
+@import url('./components/code.css${ data.refresh }');
+@import url('./components/nav-pagelist.css${ data.refresh }');
+@import url('./components/nav-pagination.css${ data.refresh }');
+@import url('./components/nav-backnext.css${ data.refresh }');
+@import url('./components/nav-taglist.css${ data.refresh }');
+@import url('./components/share.css${ data.refresh }');
+@import url('./components/footer.css${ data.refresh }');
+
+@import url('./core/print.css${ data.refresh }');

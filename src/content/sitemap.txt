@@ -1,0 +1,1 @@
+${ (toArray(tacs.all)).map(p => p.index !== false ? `${ tacs.config.domain }${ p.link }\n` : '') }

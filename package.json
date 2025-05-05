@@ -1,0 +1,44 @@
+{
+  "name": "publican.theme.basic",
+  "version": "1.0.0",
+  "description": "Basic theme for the Publican static site generator.",
+  "type": "module",
+  "main": "publican.config.js",
+  "scripts": {
+    "build": "node --no-warnings --env-file=.env.dev --env-file=.env.prod ./publican.config.js",
+    "start": "node --no-warnings --env-file=.env.dev ./publican.config.js"
+  },
+  "engines": {
+    "node": ">= 20.0.0"
+  },
+  "keywords": [
+    "Publican",
+    "theme",
+    "basic",
+    "starter",
+    "static",
+    "site",
+    "generator",
+    "ssg"
+  ],
+  "author": "Craig Buckler",
+  "license": "MIT",
+  "homepage": "https://github.com/craigbuckler/publican.theme.basic#readme",
+  "bugs": {
+    "url": "https://github.com/craigbuckler/publican.theme.basic/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/craigbuckler/publican.theme.basic.git"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/sponsors/craigbuckler"
+  },
+  "devDependencies": {
+    "livelocalhost": "1.0.2"
+  },
+  "dependencies": {
+    "publican": "0.8.0"
+  }
+}

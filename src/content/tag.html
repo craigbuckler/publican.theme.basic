@@ -1,0 +1,15 @@
+---
+title: Post tags
+menu: false
+description: The following tags have been used on posts throughout this site.
+template: simple.html
+priority: 0.2
+---
+
+<p>${ data.description }</p>
+
+<nav class="taglist">
+  <ul>
+    ${ tacs.tagList.map(i => `<li><a href="${ i.link }">#${ i.tag }<sup> ${ i.count }</sup></a></li>`) }
+  </ul>
+</nav>

@@ -1,0 +1,22 @@
+${ include('_partials/htmlhead.html') }
+${ include('_partials/header.html') }
+
+<main>
+
+  ${ data?.pagination &&
+    `<h1>${ tacs.fn.format.number( data.childPageTotal ) } "${ data.title }" post${ data.childPageTotal === 1 ? '' : 's' }${ data.pagination.pageTotal > 1 ? `, page ${ tacs.fn.format.number( data.pagination.pageCurrent1 ) } of ${ tacs.fn.format.number( data.pagination.pageTotal ) }` : ''}</h1>`
+  }
+
+  ${ include('_partials/list.html') }
+
+  <h2>All tags</h2>
+
+  <nav class="taglist">
+    <ul>
+      ${ tacs.tagList.map(i => `<li><a href="${ i.link }">#${ i.tag }<sup> ${ i.count }</sup></a></li>`) }
+    </ul>
+  </nav>
+
+</main>
+
+${ include('_partials/htmlfoot.html') }

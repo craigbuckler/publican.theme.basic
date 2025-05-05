@@ -1,0 +1,16 @@
+<aside class="pinned">
+
+  <h2>Featured posts</h2>
+
+  <nav class="pagelist">
+    ${
+      tacs.dir.get('blog')
+        .filter(p => p.pinned)
+        .sort((a, b) => b.pinned - a.pinned)
+        .map(p => tacs.fn.format.articleLink(p, 'h3') )
+    }
+  </nav>
+
+  <p class="right"><a href="${ tacs.root }blog/"><em>more posts&hellip;</em></a></p>
+
+</aside>
