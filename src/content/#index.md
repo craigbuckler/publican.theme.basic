@@ -8,7 +8,7 @@ index: weekly
 tags: Publican, SSG, theme, jsTACS
 ---
 
-${ data.description }
+${ data.description } [Get started...](--ROOT--blog/quickstart/)
 
 ## Website features
 
