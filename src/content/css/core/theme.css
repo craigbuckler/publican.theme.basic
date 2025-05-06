@@ -19,11 +19,10 @@ html[data-theme="dark"], html:has(input[name="themeswitcher"][value="dark"]:chec
 
 .themeswitcher {
 
-  transition-behavior: allow-discrete;
+  width: 1.2em;
 
   input, span {
     position: absolute;
-    left: -999px;
     clip: rect(0 0 0 0);
     width: 1px;
     height: 1px;
@@ -32,18 +31,17 @@ html[data-theme="dark"], html:has(input[name="themeswitcher"][value="dark"]:chec
 
   label {
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     opacity: 0;
     cursor: pointer;
+    pointer-events: none;
+    transition: opacity 0.3s linear;
   }
 
   input:checked + label {
-    position: relative;
     opacity: 1;
-    transition: all 0.2s linear;
-
-    @starting-style {
-      opacity: 0;
-    }
+    pointer-events: all;
   }
 
 }
