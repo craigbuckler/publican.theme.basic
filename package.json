@@ -39,6 +39,6 @@
     "livelocalhost": "1.0.2"
   },
   "dependencies": {
-    "publican": "0.8.0"
+    "publican": "0.9.0"
   }
 }
