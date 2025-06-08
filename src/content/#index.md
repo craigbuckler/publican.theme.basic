@@ -39,7 +39,7 @@ The site builds in less than a second and provides:
 * easy configuration with `.env` files
 * markdown content
 * fast build times and file watch mode
-* development mode with a localhost server and hot reloading
+* development mode with a [localhost server and hot reloading](https://www.npmjs.com/package/livelocalhost)
 * production mode with HTML minification
 * simple HTML templates with JavaScript `${ expressions }`{language=js} ([jsTACS template engine](https://publican.dev/docs/setup/jstacs/))
 * function libraries to build navigation menus and format values

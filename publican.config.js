@@ -95,6 +95,7 @@ if (isDev) {
 
   livelocalhost.servedir = publican.config.dir.build;
   livelocalhost.serveport = servePort;
+  livelocalhost.accessLog = false;
   livelocalhost.start();
 
 }

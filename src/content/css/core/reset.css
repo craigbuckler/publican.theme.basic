@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box;
   scrollbar-width: thin;
-  /* scrollbar-gutter: stable; */
 }
 
 :root {
@@ -19,6 +18,7 @@
 
 html {
   writing-mode: horizontal-tb;
+  scrollbar-gutter: stable;
   scroll-behavior: smooth;
 }
 
@@ -29,6 +29,10 @@ html:has(::backdrop) {
 body {
   line-height: 1.1;
   touch-action: manipulation;
+}
+
+body:has(::backdrop), body:has(dialog[open]), body:has(static-search[aria-expanded]) {
+	overflow: hidden;
 }
 
 img, figure, picture, video, canvas {
@@ -98,6 +102,11 @@ table {
 
 label {
   user-select: none;
+}
+
+/* web components */
+:not(:defined) {
+  display: none;
 }
 
 /* disable animations */

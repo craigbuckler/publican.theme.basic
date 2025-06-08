@@ -3,7 +3,6 @@ title: About Publican
 menu: Publican
 description: How Publican improves website resilience, security, and performance.
 date: 2025-04-30
-modified: 2025-02-26
 priority: 0.5
 tags: Publican, SSG, jsTACS
 ---

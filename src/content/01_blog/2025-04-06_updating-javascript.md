@@ -25,7 +25,7 @@ You can add, remove, or rearrange JavaScript files as necessary.
 
 > The template partial `src/template/_partials/htmlhead.html` sets a Content Security Policy in the HTML `<head>`. You may need to update the `<meta>` tag if you load resources from third-party domains.
 
-Note that JavaScript is not hot-reloaded by the browser and you must manually refresh the page when a change is made.
+Note that JavaScript is not configured to be hot-reloaded. You must manually refresh the browser when a change is made.
 
 
 ## Template literals
