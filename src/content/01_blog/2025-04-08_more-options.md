@@ -1,6 +1,7 @@
 ---
 title: Further theme options
 description: Change this theme using Publican methods or other tools.
+modified: 2025-06-18
 author: Craig Buckler
 tags: Publican, theme, configuration
 priority: 1.0
@@ -19,6 +20,8 @@ The following links may help:
 
 * [Publican documentation](https://publican.dev/docs/)
 
-* the [LiveLocalhost](https://www.npmjs.com/package/livelocalhost) hot-reload development server used by this theme
+* the [StaticSearch](https://publican.dev/tools/staticsearch/) search engine for static sites
 
-* the [esbuild JavaScript and CSS bundler](https://esbuild.github.io/) used by other Publican themes
+* the [LiveLocalhost](https://publican.dev/tools/livelocalhost/) hot-reload development server used by this theme
+
+* the [esbuild JavaScript and CSS bundler](https://esbuild.github.io/) used by [other Publican themes](https://publican.dev/docs/recipe/build/esbuild/)

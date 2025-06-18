@@ -36,9 +36,9 @@
     "url": "https://github.com/sponsors/craigbuckler"
   },
   "devDependencies": {
-    "livelocalhost": "1.2.0"
+    "livelocalhost": "1.2.1"
   },
   "dependencies": {
-    "publican": "0.10.0"
+    "publican": "0.10.1"
   }
 }

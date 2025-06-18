@@ -66,6 +66,11 @@ Publican uses [jsTACS](https://publican.dev/docs/setup/jstacs/) as its templatin
 * It converts `!{ expression }`{language=js} blocks to `${ expressions }`{language=js} at the end of the build. You can therefore [use partially-built jsTACS templates](https://publican.dev/docs/setup/jstacs/#runtime-expressions) in [Express.js](https://expressjs.com/) or other Node.js frameworks at runtime.
 
 
+## Who created Publican?
+
+[Craig Buckler](https://craigbucker.com/). I'm a web developer with a few decades experience who first wrote a static site generator back 25 years ago before they became a thing!
+
+
 ## I want to know more!
 
 Refer to [Publican.dev](https://publican.dev) and the [documentation pages](https://publican.dev/docs/) for more information.
