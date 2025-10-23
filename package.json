@@ -1,6 +1,6 @@
 {
   "name": "publican.theme.basic",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Basic theme for the Publican static site generator.",
   "type": "module",
   "main": "publican.config.js",
@@ -36,9 +36,9 @@
     "url": "https://github.com/sponsors/craigbuckler"
   },
   "devDependencies": {
-    "livelocalhost": "1.2.1"
+    "livelocalhost": "1.2.4"
   },
   "dependencies": {
-    "publican": "0.10.1"
+    "publican": "0.11.0"
   }
 }
