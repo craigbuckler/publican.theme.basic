@@ -48,6 +48,12 @@ publican.config.passThrough.add({ from: './src/media/images', to: './media/image
 // determine post date from filename
 publican.config.processContent.add( fnHooks.processFileDate );
 
+// processRenderStart hook: generate site inline scripts and CSP hashes
+publican.config.processRenderStart.add( fnHooks.renderstartInlineScripts );
+
+// processPreRender hook: generate page inline scripts and CSP hashes
+publican.config.processPreRender.add( fnHooks.prerenderInlineScripts );
+
 // processPostRender hook: add <meta> tags
 publican.config.processPostRender.add( fnHooks.postrenderMeta );
 
